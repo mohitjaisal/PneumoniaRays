@@ -22,3 +22,14 @@ showWarningOnDirectExecution = true
 # Level of logging: 'error', 'warning', 'info', or 'debug'.
 # Default: 'info'
 logLevel = "debug"
+
+
+[client]
+
+# Whether to enable st.cache.
+# Default: true
+caching = true
+
+# If false, makes your Streamlit script not draw to a Streamlit app.
+# Default: true
+displayEnabled = true
