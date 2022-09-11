@@ -47,3 +47,10 @@ installTracer = false
 # Sets the MPLBACKEND environment variable to Agg inside Streamlit to prevent Python crashing.
 # Default: true
 fixMatplotlib = true
+
+[server]
+
+# List of folders that should not be watched for changes. Relative paths will be taken as relative to the current working directory.
+# Example: ['/home/user1/env', 'relative/path/to/folder']
+# Default: []
+folderWatchBlacklist = ['']
