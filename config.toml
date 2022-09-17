@@ -97,3 +97,12 @@ serverPort = 80
 # Name of the AWS S3 bucket to save apps.
 # Default: (unset)
 # bucket =
+
+# URL root for external view of Streamlit apps.
+# Default: (unset)
+# url =
+
+# Access key to write to the S3 bucket.
+# Leave unset if you want to use an AWS profile.
+# Default: (unset)
+# accessKeyId =
