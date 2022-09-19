@@ -106,3 +106,13 @@ serverPort = 80
 # Leave unset if you want to use an AWS profile.
 # Default: (unset)
 # accessKeyId =
+
+# Secret access key to write to the S3 bucket.
+# Leave unset if you want to use an AWS profile.
+# Default: (unset)
+#secretAccessKey =
+
+# Make the shared app visible only to users who have been granted view permission. If you are interested in this option, contact us at support@streamlit.io.
+# Default: false
+# requireLoginToView = false
+
