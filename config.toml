@@ -3,11 +3,8 @@
 [global]
 
 # By default, Streamlit checks if the Python watchdog module is available and, if not, prints a warning asking for you to install it. The watchdog module is not required, but highly recommended. It improves Streamlit's ability to detect changes to files in your filesystem.
-
 # If you'd like to turn off this warning, set this to True.
-
 # Default: false
-
 disableWatchdogWarning = false
 
 # Configure the ability to share apps to the cloud.
@@ -34,6 +31,7 @@ caching = true
 # Default: true
 displayEnabled = true
 
+
 [runner]
 
 # Allows you to type a variable or string by itself in a single line of Python code to write it to the app.
@@ -47,6 +45,7 @@ installTracer = false
 # Sets the MPLBACKEND environment variable to Agg inside Streamlit to prevent Python crashing.
 # Default: true
 fixMatplotlib = true
+
 
 [server]
 
@@ -116,3 +115,16 @@ serverPort = 80
 # Default: false
 # requireLoginToView = false
 
+# The "subdirectory" within the S3 bucket where to save apps.
+# S3 calls paths "keys" which is why the keyPrefix is like a subdirectory. Use "" to mean the root directory.
+# Default: ""
+keyPrefix = ""
+
+# AWS region where the bucket is located, e.g. "us-west-2".
+# Default: (unset)
+# region =
+
+# AWS credentials profile to use.
+# Leave unset to use your default profile.
+# Default: (unset)
+# profile =
